@@ -9,12 +9,6 @@ export default function Home() {
   const aboutRef = useRef(null);
 
 
-  const scrollToAbout = () => {
-    aboutRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-  
-
-
   return(
 <div className="mx-auto sm:ml-0">
       

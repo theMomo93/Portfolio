@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from 'next/router';
+
 import portfolioImage from "../images/Aboutus.png";
 import { LiaLinkedin } from "react-icons/lia";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { Ubuntu } from "next/font/google";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 // Import the specific Google Font you want to use
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: ["400"] });
@@ -60,11 +61,10 @@ export default function Navbar() {
           <h2 className='font-semibold text-2xl text-gray-900 flex align-center justify-center'>I'm looking for... </h2>
           <hr/>
           <ul className='text-gray-100 text-xl flex flex-col  justify-center align-center my-6'>
-            <li ><a className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'  href="#about">About</a></li>
-            <li ><a className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2' href="#techskills">Tech Skills</a></li>
-            <li ><a className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2' href="#sofskills">Soft Skills</a></li>
-
-            <li ><a className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2' href="#work">Portfolio</a></li>
+          <ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="about">About</ScrollLink>
+<ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="techskills">Tech Skills</ScrollLink>
+<ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="sofskills">Soft Skills</ScrollLink>
+<ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="work">Portfolio</ScrollLink>
             
           </ul>
           <div className='text-gray-200'>
