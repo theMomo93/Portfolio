@@ -1,115 +1,92 @@
 import Navbar from "@/components/Navbar";
-import { Rubik, Roboto } from "next/font/google";
-import { useRef } from "react";
+import Image from "next/image";
+import myImage from "../images/Aboutus.png";
+import StarRating from "@/components/StarRating";
 
-const rubik = Rubik({ subsets: ["latin"], weight: ["400"] });
-const roboto = Roboto({ subsets: ["latin"], weight: ["700"] });
-
+const technicalSkills = [
+  { name: 'HTML5', rating: 5 },
+  { name: 'CSS', rating: 5 },
+  { name: 'JavaScript', rating: 4 },
+  { name: 'React', rating: 4 },
+  { name: 'Next.js', rating: 4 },
+  { name: 'Express.js', rating: 4 },
+  { name: 'Databases', rating: 4 },
+  { name: 'Nodemon', rating: 4 },
+  { name: 'Node', rating: 4 },
+  { name: 'Tailwind', rating: 5 },
+  { name: 'Bootstrap', rating: 5 },
+  { name: 'API', rating: 5 },
+];
+const softSkills = [
+  { name: 'Leadership', rating: 4 },
+  { name: 'Communication', rating: 5 },
+  { name: 'Adaptability', rating: 5 },
+  { name: 'Flexibility', rating: 5 },
+  { name: 'Teamwork', rating: 5 },
+  { name: 'Problem Solving', rating: 5 },
+];
 export default function Home() {
-  function handleClick() {
-    const aboutSection = document.getElementById("about");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-
   return (
-    <div className="mx-auto sm:ml-0">
-      <div className={rubik.className}>
-        <section className="bgHero h-screen flex justify-center items-center">
-          <div>
-            <div className="flex flex-col items-center h-screen md:p-24 m-4 text-white text-center">
-              <h1 className="text-5xl md:text-9xl font-extrabold leading-tight">
-                Hello, I'm Monika
-              </h1>
-              <p className="mt-4 text-lg md:text-xl text-black font-semibold ">Junior Fullstack Web Developer</p>
-              <hr className="bg-gray-900 border-none rounded h-1 w-2/4 mx-auto my-2" />
-              <p className="mt-8 max-w-md">
-                Welcome to my portfolio! I'm passionate about coding and eager
-                to learn and grow as a web developer.
-              </p>
-              <button
-                onClick={handleClick}
-                className="mt-12 px-8 py-4 bg-sky-700 text-white rounded shadow-xl hover:bg-teal-600 text-2xl transition-all duration-300 ease-in-out hover:px-24 hover:py-12 hover:text-3xl"
-              >
-                Get Started
-              </button>
-            </div>
-          </div>
-        </section>
+    <div className="hero-bg mx-auto sm:ml-0" style={{ fontFamily: "Gopher" }}>
+      <Navbar />
 
-        <hr className=" h-6 bg-gray-300" />
-        <section className=" sm:px-6 lg:px-24 bgImage h-fit overflow-y-scroll">
-          <Navbar />
+      <section className="h-screen flex flex-col lg:flex-row justify-center items-center">
+  <div className="flex-1 flex flex-col justify-center items-start m-6 lg:m-12 p-4 text-center lg:text-left">
+    <h1 className="text-4xl sm:text-5xl lg:text-7xl font-medium leading-normal mb-6 lg:mb-12">
+      Welcome to my Portfolio
+    </h1>
+    <p className="leading-6 tracking-wide text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8">
+      Junior Fullstack Developer
+    </p>
+    <p className="text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8">
+      I like to create scalable and solid websites with great user
+      experience. I invite you to explore more about me and my skills.
+    </p>
+    <button className="button-text text-lg sm:text-xl lg:text-2xl bg-black py-3 sm:py-4 lg:py-6 px-6 sm:px-8 lg:px-12 rounded-full my-4 lg:my-8 hover:text-black hover:bg-orange-50">
+      EXPLORE
+    </button>
+  </div>
 
-          <div
-            id="about"
-            className="inline-flex items-center justify-center w-full mt-4 sm:mt-12 pt-8"
-          >
-            <hr className="w-2/3 sm:w-3/4 h-1 my-4 sm:my-8 bg-gray-200 border-0 dark:bg-gray-300" />
-            <span className="p-2 absolute px-3 font-medium text-gray-900 -translate-x-1/2 bg-white left-1/2 dark:text-gray-800 dark:bg-gray-300 text-black rounded text-3xl sm:text-5xl">
-              About me
-            </span>
-          </div>
-          <span className="justify-center flex text-white font-semibold text-xl">
-            The how and the why
-          </span>
-          <div className="mt-4 sm:mt-0 backdrop-blur-md rounded-xl sm:p-0 shadow-2xl ring-1 ring-black/5 sm:m-2 h-auto inline-block max-w-max text-center">
-            <div className="w-4/5 my-12 mx-auto text-center text-gray-900 text-sm sm:text-lg lg:text-xl indent-4 sm:indent-8 font-semibold sm:font-light">
-              <p >
-                I like challenge. I'm not promising I won't make mistakes, but I
-                will try my best to prevent them, learn from them, and apologize
-                for them.
-              </p>
-              <hr className="bg-gray-300 border-none rounded h-1 w-64 mx-auto my-2" />
-              <p>
-                I traveled most of my 20s around Europe for World Rowing
-                Competitions, meeting many people different nationalities. Due
-                to an injury, I had to switch my path. After working hard and
-                climbing the ladder from Housekeeping in a foreign country
-                through an associate in a logistics company to a Team Leader at
-                Amazon, I found out I had cancer. After fighting it from 2021 to
-                2023 and trying to keep myself sane with online Bootcamp, in
-                March 2024, I finally managed to finish both of them.
-              </p>
-              <hr className="bg-gray-300 border-none rounded h-1 w-64 mx-auto my-2" />
-              <p className="font-semibold">
-                Free of cancer and with a new goal in mind, I am ready to climb
-                the ladder again, determined not to fall off it again. The
-                journey isn't over yet, but so far, I have learned so much, and
-                I want to learn even more in the future. If that doesn't prove
-                determination and stubbornness to achieve goals, then I don't
-                know what will. Right now, my eyes are set on Full-stack Web
-                Development.
-              </p>
-              <hr className="bg-gray-300 border-none rounded h-1 w-64 mx-auto my-2" />
-              <p>
-                I enjoy meeting new people from different backgrounds. Working
-                in development gives me the opportunity to create as well as
-                solve complex issues. The flexibility with a hybrid job is also
-                a big plus. I know I am going to be a great addition to your
-                company, and if you are still reading this, so do you.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <hr className=" h-6 bg-gray-300 " />
-      <section className="h-screen bg-gray-300">
-        <div className="flex flex-col" id="techskills">
-          <h1>Tech Skills</h1>
-          <ul>
-            <li>CSS</li>
-            <li>HTML5</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>MongoDb</li>
-            <li>Node</li>
-            <li>Nodemon</li>
-          </ul>
-        </div>
-      </section>
+  <div className="flex-1 flex justify-center items-center m-4 lg:m-12">
+    <Image src={myImage} width={500} height={450} />
+  </div>
+</section>
+
+      <section className="bg-gray-50 min-h-screen flex flex-col justify-start items-center py-8 sm:py-16">
+  <h1 className="text-4xl sm:text-6xl font-medium leading-normal my-4 sm:my-12">
+    Welcome to my Skills Zone
+  </h1>
+  <div className="flex flex-col sm:flex-row flex-1 w-full max-w-screen-lg">
+    <div className="flex flex-col justify-center mx-4 sm:mx-12 my-4 sm:my-0 w-full p-4">
+      <h2 className="text-3xl sm:text-4xl tracking-widest underline mb-4">Technical Skills</h2>
+      <ul className="my-2 text-lg sm:text-2xl grid-list ">
+        {technicalSkills.map((skill, index) => (
+          <li key={index} className="mb-2 ">
+            <StarRating skill={skill} />
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div className="flex flex-col justify-center mx-4 sm:mx-12 my-4 sm:my-0 w-full p-4">
+      <h2 className="text-3xl sm:text-4xl tracking-widest underline mb-4">Soft Skills</h2>
+      <ul className="my-2 text-lg sm:text-2xl ">
+        {softSkills.map((skill, index) => (
+          <li key={index} className="mb-2 mr-4">
+            <StarRating skill={skill} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+  <div className="text-lg sm:text-xl">
+    <p>lorem ipsum</p>
+  </div>
+</section>
+<section>
+  
+</section>
+
+   
     </div>
   );
 }

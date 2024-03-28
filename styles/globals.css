@@ -8,17 +8,25 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-.bgImage {
-  
-    background-image: url(../images/bg10.avif);
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background image */
-    height: 100vh; /* Set the height to 100% of the viewport height */
-  }  
-  .bgHero {
-  
-    background-image: url(../images/bg11.webp);
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background image */
-    height: 100vh; /* Set the height to 100% of the viewport height */
-  }  
+.navbar-bg, .hero-bg{
+  background-color: #e1ccbe;
+}
+.button-text{
+  color: #e1ccbe;
+}
+
+@font-face {
+  font-family: 'Gopher';
+  src: local('Gopher Medium'), local('Gopher-Medium'),
+      url('../font/Gopher-Medium.woff2') format('woff2'),
+      url('../font/Gopher-Medium.woff') format('woff'),
+      url('../font/Gopher-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-right: 10px;
+}
