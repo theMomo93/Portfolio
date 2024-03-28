@@ -16,14 +16,10 @@ export default function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const sidebarRef = useRef(null);
 
-
-
-
-
   useEffect(() => {
     function handleClickOutside(event) {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-        setIsSidebarOpen(false);
+        setIsSidebarOpen(false)
       }
     }
 
@@ -34,7 +30,11 @@ export default function Navbar() {
   }, [sidebarRef]);
 
   const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
+    setIsSidebarOpen(prevState => !prevState);
+  };
+
+  const closeSidebar = () => {
+    setIsSidebarOpen(false);
   };
 
   return (
@@ -56,15 +56,16 @@ export default function Navbar() {
           />
           <h1 className='text-gray-100 text-5xl font-semibold  '>Monika Genedl</h1>
           
-          <p className='text-gray-100 text-xl flex justify-center mb-10 text-gray-900'>Junior Fullstack Developer</p>
+          <p className='text-gray-100 text-xl flex justify-center mb-8 text-gray-900'>Junior Fullstack Developer</p>
 
           <h2 className='font-semibold text-2xl text-gray-900 flex align-center justify-center'>I'm looking for... </h2>
           <hr/>
           <ul className='text-gray-100 text-xl flex flex-col  justify-center align-center my-6'>
+
           <ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="about">About</ScrollLink>
-<ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="techskills">Tech Skills</ScrollLink>
-<ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="sofskills">Soft Skills</ScrollLink>
-<ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="work">Portfolio</ScrollLink>
+          <ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="techskills">Tech Skills</ScrollLink>
+          <ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="sofskills">Soft Skills</ScrollLink>
+          <ScrollLink className='cursor-pointer flex m-1 justify-center bg-gray-100 text-black font-semibold rounded-full hover:bg-gray-700 hover:text-gray-100 p-2'smooth={true} to="work">Portfolio</ScrollLink>
             
           </ul>
           <div className='text-gray-200'>
@@ -88,6 +89,12 @@ export default function Navbar() {
           </div>
         </div>
       </aside>
+      {isSidebarOpen && (
+        <div
+          className="fixed inset-0 bg-black opacity-50 z-30"
+          onClick={closeSidebar}
+        ></div>
+      )}
     </div>
   );
 }
