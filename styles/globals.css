@@ -30,3 +30,9 @@
   grid-template-columns: repeat(2, 1fr);
   margin-right: 10px;
 }
+.spot1{
+  background-color: antiquewhite;
+  border-radius: 43% 57% 60% 40% / 53% 34% 66% 47% ;
+  height: 100px;
+  width: 200px;
+}
