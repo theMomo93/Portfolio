@@ -51,7 +51,7 @@ export default function Contact() {
       <img src="img/shape.png" class="square" alt="" />
       <div className="form">
         <div className="contact-info">
-          <h3 className="title">Let's get in touch</h3>
+          <h3 className="title">Let us get in touch</h3>
           <p className="text">
             If you are interested contact me through this page or 
             write to me in your own style! 
