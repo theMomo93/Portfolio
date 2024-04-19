@@ -4,6 +4,7 @@ import myImage from "../images/Aboutus.png";
 import StarRating from "@/components/StarRating";
 import Card from "@/components/Card";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const technicalSkills = [
   { name: "HTML5", rating: 5 },
@@ -54,11 +55,11 @@ export default function Home() {
       skills.
     </p>
    
-    
+    <Link href="#explore">
     <button className="button-text text-lg sm:text-xl lg:text-2xl bg-black py-3 sm:py-4 lg:py-6 px-6 sm:px-8 lg:px-12 rounded-full my-4 lg:my-8 hover:text-black hover:bg-orange-50">
       EXPLORE
     </button>
-
+</Link>
   </div>
 
   <div className="flex-1 flex justify-center items-center m-4 lg:m-12">
@@ -112,7 +113,7 @@ export default function Home() {
 
 <hr className='border border-1 border-black border-solid w-11/12 mx-auto'/>
 
-      <section>
+      <section id="explore">
         <div className="p-12 m-8">
           <h1 className=" text-4xl sm:text-5xl lg:text-7xl font-medium leading-normal mb-6 lg:mb-12">
             {" "}
