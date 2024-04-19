@@ -35,7 +35,7 @@ export default function Home() {
       <Navbar />
     
 
-      <section className="min-h-screen flex flex-col lg:flex-row justify-center items-center">
+      <section id="home" className="min-h-screen flex flex-col lg:flex-row justify-center items-center">
   <div className="flex-1 flex flex-col justify-center items-center lg:items-start m-6 lg:m-12 p-4 text-center lg:text-left">
     <h1 className="text-4xl sm:text-5xl lg:text-7xl font-medium leading-normal mb-6 lg:mb-12">
       Welcome to my Portfolio

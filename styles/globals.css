@@ -105,16 +105,17 @@
   left: -20px;
 }
 .circle.four {
-  width: 130px;
-  height: 130px;
-  bottom: 130px;
-  left: 380px;
+  width: 20%; /* Adjust as needed */
+  height: 10%; /* Adjust as needed */
+  bottom: 10%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  
 }
 .circle.five {
-  width: 80px;
-  height: 80px;
-  bottom: 50px;
-  left: 580px;
+  width: 17%;
+  height: 10%;
+  bottom: 28%;
+  left: 60%;
   
 }
 .contact-form:before {
