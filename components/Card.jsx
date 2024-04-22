@@ -10,7 +10,7 @@ export default function Card() {
   return (
     <div className="flex flex-wrap justify-center flex-1">
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+        <h1 className="text-center mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
           Community Forum 2024
         </h1>
         <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
@@ -49,8 +49,8 @@ export default function Card() {
       </div>
 
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
-          Mockup HackerNews 2023
+        <h1 className="text-center mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+          Mockup Hacker News 2023
         </h1>
         <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 ">
           <Image
@@ -83,7 +83,7 @@ export default function Card() {
       </div>
 
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+        <h1 className="text-center mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
           Dummy PetAdoption 2023
         </h1>
         <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 ">
@@ -118,7 +118,7 @@ export default function Card() {
       </div>
 
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+        <h1 className="text-center mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
           Mini Roleplay Game 2024
         </h1>
         <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 ">
@@ -152,7 +152,7 @@ export default function Card() {
       </div>
 
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+        <h1 className="text-center mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
           Simon Says game 2022
         </h1>
         <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 ">

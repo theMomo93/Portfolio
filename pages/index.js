@@ -37,7 +37,7 @@ export default function Home() {
 
       <section id="home" className="min-h-screen flex flex-col lg:flex-row justify-center items-center  overflow-hidden">
   <div className="flex-1 flex flex-col justify-center items-center lg:items-start m-6 lg:m-12 p-4 text-center lg:text-left">
-    <h1 className="text-4xl sm:text-5xl lg:text-7xl font-medium leading-normal mb-6 lg:mb-12">
+    <h1 className="shadow-2xl p-2 rounded-xl text-4xl sm:text-5xl lg:text-7xl font-medium leading-normal mb-6 lg:mb-12">
       Welcome to my Portfolio
     </h1>
     <span className="circle one shadow-xl"></span>
@@ -46,7 +46,7 @@ export default function Home() {
     <span className="circle four shadow-xl"></span>
     <span className="circle five shadow-xl"></span>
     <span className="circle six shadow-xl"></span>
-    <p className="leading-6 tracking-wide text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8">
+    <p className="font-semibold leading-6 tracking-wide text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8">
       Junior Fullstack Developer
     </p>
     <p className="text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8">

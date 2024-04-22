@@ -8,17 +8,18 @@ export default function Navbar() {
       <h1 className='text-4xl sm:text-5xl mx-8 sm:px-8'>Monika Genedl</h1>
       <ul className='flex flex-wrap align-center justify-center flex-col sm:flex-row  space-y-4 sm:space-y-0 sm:space-x-4 text-lg sm:text-2xl p-2 sm:p-4'>
         <li className='p-2'>
-          <Link className='py-4 px-6 sm:px-12 hover:bg-orange-50 rounded' href="/">
+          <Link className='shadow-xl py-4 px-6 sm:px-12 hover:bg-orange-50 rounded' href="/">
             Home
           </Link>
+          
         </li>
         <li className='p-2'>
-          <Link className='py-4 px-6 sm:px-12 hover:bg-orange-50 rounded' href="/about">
+          <Link className='shadow-xl py-4 px-6 sm:px-12 hover:bg-orange-50 rounded' href="/about">
             About
           </Link>
         </li>
         <li className='p-2'>
-          <Link className='py-4 px-6 sm:px-12 hover:bg-orange-50 rounded' href="/contact">
+          <Link className='shadow-xl py-4 px-4 sm:px-12 hover:bg-orange-50 rounded' href="/contact">
             Contact
           </Link>
         </li>
