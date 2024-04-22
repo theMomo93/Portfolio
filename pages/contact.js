@@ -62,7 +62,7 @@ export default function Contact() {
               <i className="text-xl"><FaRegAddressCard /> 
 </i> 
 
-              <p> Freundschaftsring  41, 04319 Leipzig </p>
+              <p> 04319 Leipzig </p>
             </div>
             <div className="information">
               <i className="text-xl"><MdOutlineAlternateEmail />
