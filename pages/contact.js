@@ -53,7 +53,7 @@ export default function Contact() {
         <div className="contact-info">
           <h3 className="title">Let us get in touch</h3>
           <p className="text">
-            If you are interested contact me through this page, catch me on whats app or email me!    write to me in your own style! 
+            If you are interested contact me through this page, catch me on whats app or email me!  
           </p>
 
           <div className="info">
