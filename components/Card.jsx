@@ -9,15 +9,13 @@ import MockPetAdoption from "../images/adoption.png";
 export default function Card() {
   return (
     <div className="flex flex-wrap justify-center flex-1">
-
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="text-3xl flex align-center justify-center my-4 underline underline-offset-2 font-semibold  ">
+        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
           Community Forum 2024
         </h1>
-        <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 relative">
-         <div className="">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8">
           <Image
-            className="rounded-xl object-cover shadow-black/40 "
+            className="rounded-xl object-cover"
             width={450}
             height={350}
             src={PortGermany}
@@ -29,22 +27,30 @@ export default function Card() {
               Immigration - Port Germany
             </div>
             <p className="text-gray-700 text-base mb-2">
-              A dynamic Forum and with comments and replies. Final Project for 
-              WBS School. Goal was to try and solve a real life issue. 
-              <span className="font-semibold text-black underline underline-offset-2"> Tools : </span>
-             Next.js, Tailwind, MongoDB, Express.js, Nodejs, JavaScript, HTML, CSS, GitHub, Vercel
+              A dynamic Forum and with comments and replies. Final Project for
+              WBS School. Goal was to try and solve a real life issue.
+              <span className="font-semibold text-black underline underline-offset-2">
+                {" "}
+                Tools :{" "}
+              </span>
+              Next.js, Tailwind, MongoDB, Express.js, Nodejs, JavaScript, HTML,
+              CSS, GitHub, Vercel
             </p>
-          </div>
-              <a href="https://immigration-port-germany-n9w43l9mm-momos-projects-c74af16f.vercel.app/" target="_blank">  
-              <button className=" hero-bg text-black rounded group mx-4 py-2 px-4  mb-4 font-semibold hover:bg-black hover:text-orange-100">EXPLORE</button>
-               </a> 
+          
+          <a
+            href="https://immigration-port-germany-n9w43l9mm-momos-projects-c74af16f.vercel.app/"
+            target="_blank"
+            className="hero-bg text-black rounded group py-2 px-4 font-semibold mt-0 hover:bg-black hover:text-orange-100"
+          >
+            EXPLORE
+          </a>
           </div>
         </div>
       </div>
 
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
-        Mockup HackerNews 2023
+        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+          Mockup HackerNews 2023
         </h1>
         <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 ">
           <Image
@@ -55,24 +61,30 @@ export default function Card() {
             alt="Avatar"
           />
           <div class="px-6 py-4">
-            <div className="font-bold text-xl mb-4">
-              Project Mockup 2023
-            </div>
+            <div className="font-bold text-xl mb-4">Project Mockup 2023</div>
             <p className="text-gray-700 text-base mb-2">
-              Project needed to be complete in 6h, group of two people.
-               Goal was t recreate the Hacker News page as much as possible.  
-               <span className="font-semibold text-black underline underline-offset-2"> Tools : </span>JavaScript, React, HTML, CSS, Tailwind, GitHub, Vercel
+              Project needed to be complete in 6h, group of two people. Goal was
+              t recreate the Hacker News page as much as possible.
+              <span className="font-semibold text-black underline underline-offset-2">
+                {" "}
+                Tools :{" "}
+              </span>
+              JavaScript, React, HTML, CSS, Tailwind, GitHub, Vercel
             </p>
-            <a href="https://hacker-news-imitation.vercel.app/" target="_blank">  
-              <button className="hero-bg text-black rounded group mx-4 py-2 px-4  mb-4 font-semibold hover:bg-black hover:text-orange-100">EXPLORE</button>
-               </a> 
+            <a
+              href="https://hacker-news-imitation.vercel.app/"
+              target="_blank"
+              className="hero-bg text-black rounded group  py-2 px-4  mb-4 font-semibold hover:bg-black hover:text-orange-100"
+            >
+              EXPLORE
+            </a>
           </div>
         </div>
       </div>
 
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
-        Dummy PetAdoption 2023
+        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+          Dummy PetAdoption 2023
         </h1>
         <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 ">
           <Image
@@ -83,24 +95,30 @@ export default function Card() {
             alt="Avatar"
           />
           <div class="px-6 py-4">
-            <div className="font-bold text-xl mb-4">
-              Dummy PetAdoption 2023
-            </div>
+            <div className="font-bold text-xl mb-4">Dummy PetAdoption 2023</div>
             <p className="text-gray-700 text-base mb-2">
-              Personal project, to make families connect with pets for adoption. Here we match our adorable
-               house pets with people to create beautiful relationships lasting a lifetime.
-              <span className="font-semibold text-black underline underline-offset-2"> Tools : </span>
+              Personal project, to make families connect with pets for adoption.
+              Here we match our adorable house pets with people to create
+              beautiful relationships lasting a lifetime.
+              <span className="font-semibold text-black underline underline-offset-2">
+                {" "}
+                Tools :{" "}
+              </span>
               JavaScript, HTML, CSS, Tailwind, Bootstrap5, React, GitHub, Vercel
             </p>
-            <a href="https://mock-pet-adoption-project.vercel.app/" target="_blank">  
-              <button className="hero-bg text-black rounded group mx-4 py-2 px-4  mb-4 font-semibold hover:bg-black hover:text-orange-100">EXPLORE</button>
-               </a> 
+            <a
+              href="https://mock-pet-adoption-project.vercel.app/"
+              target="_blank"
+              className="hero-bg text-black rounded group py-2 px-4  mb-4 font-semibold hover:bg-black hover:text-orange-100"
+            >
+              EXPLORE
+            </a>
           </div>
         </div>
       </div>
 
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
           Mini Roleplay Game 2024
         </h1>
         <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 ">
@@ -112,24 +130,29 @@ export default function Card() {
             alt="Avatar"
           />
           <div class="px-6 py-4">
-            <div className="font-bold text-xl mb-4">
-              Perish the Dragon
-            </div>
+            <div className="font-bold text-xl mb-4">Perish the Dragon</div>
             <p className="text-gray-700 text-base mb-2">
-              Created to better understand and practice JavaScript. A role playing game, where to win 
-              you have to defeat a dragon
-              <span className="font-semibold text-black underline underline-offset-2"> Tools: </span>
+              Created to better understand and practice JavaScript. A role
+              playing game, where to win you have to defeat a dragon
+              <span className="font-semibold text-black underline underline-offset-2">
+                {" "}
+                Tools:{" "}
+              </span>
               JavaScript, HTML, CSS, DOM, GitHub, Vercel
             </p>
-            <a href="https://mini-game-iota.vercel.app/" target="_blank">  
-              <button className="hero-bg text-black rounded group mx-4 py-2 px-4  mb-4 font-semibold hover:bg-black hover:text-orange-100">EXPLORE</button>
-               </a> 
+            <a
+              href="https://mini-game-iota.vercel.app/"
+              target="_blank"
+              className="hero-bg text-black rounded group py-2 px-4  mb-4 font-semibold hover:bg-black hover:text-orange-100"
+            >
+              EXPLORE
+            </a>
           </div>
         </div>
       </div>
 
       <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
-        <h1 className="text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+        <h1 className="mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
           Simon Says game 2022
         </h1>
         <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 ">
@@ -142,17 +165,25 @@ export default function Card() {
           />
           <div class="px-6 py-4">
             <div className="font-bold text-xl mb-4">
-              Simon Says -repeat after me! 
+              Simon Says -repeat after me!
             </div>
-            <p className="text-gray-700 text-base mb-2">
-              There is no better to understand DOM, JavaScript and how to utilize classes
-              than to practice it by making small games! Its about learning and enjoying what you do!
-              <span className="font-semibold text-black underline underline-offset-2"> Tools: </span>
+            <p className="mb-2 text-gray-700 text-base mb-2">
+              There is no better to understand DOM, JavaScript and how to
+              utilize classes than to practice it by making small games! Its
+              about learning and enjoying what you do!
+              <span className="font-semibold text-black underline underline-offset-2">
+                {" "}
+                Tools:{" "}
+              </span>
               HTML, CSS, JavaScript, DOM, GitHub, Vercel
             </p>
-            <a href="https://simon-says-two.vercel.app/" target="_blank">  
-              <button className="hero-bg text-black rounded group mx-4 py-2 px-4  mb-4 font-semibold hover:bg-black hover:text-orange-100">EXPLORE</button>
-               </a> 
+            <a
+              href="https://simon-says-two.vercel.app/"
+              target="_blank"
+              className="hero-bg text-black rounded group py-2 px-4  my-4 font-semibold hover:bg-black hover:text-orange-100"
+            >
+              EXPLORE
+            </a>
           </div>
         </div>
       </div>
