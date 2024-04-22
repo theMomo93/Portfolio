@@ -35,7 +35,7 @@ export default function Home() {
       <Navbar />
     
 
-      <section id="home" className="min-h-screen flex flex-col lg:flex-row justify-center items-center">
+      <section id="home" className="min-h-screen flex flex-col lg:flex-row justify-center items-center -mb-12">
   <div className="flex-1 flex flex-col justify-center items-center lg:items-start m-6 lg:m-12 p-4 text-center lg:text-left">
     <h1 className="text-4xl sm:text-5xl lg:text-7xl font-medium leading-normal mb-6 lg:mb-12">
       Welcome to my Portfolio
@@ -51,7 +51,7 @@ export default function Home() {
     </p>
     <p className="text-lg sm:text-xl lg:text-2xl mb-6 lg:mb-8">
       I like to create scalable and solid websites with great user experience.
-      I know how to center a div. I invite you to explore more about me and my
+      I strive to learn something new every day. I invite you to explore more about me and my
       skills.
     </p>
    
@@ -64,10 +64,10 @@ export default function Home() {
 
   <div className="flex-1 flex justify-center items-center m-4 lg:m-12">
     <Image
-      className="rounded shadow-2xl"
+      className=" myImage"
       src={myImage}
-      width={600}
-      height={500}
+      width={650}
+      height={550}
       alt="picture of a web developer"
     />
   </div>
