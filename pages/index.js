@@ -35,7 +35,7 @@ export default function Home() {
       <Navbar />
     
 
-      <section id="home" className="min-h-screen flex flex-col lg:flex-row justify-center items-center -mb-12">
+      <section id="home" className="min-h-screen flex flex-col lg:flex-row justify-center items-center  overflow-hidden">
   <div className="flex-1 flex flex-col justify-center items-center lg:items-start m-6 lg:m-12 p-4 text-center lg:text-left">
     <h1 className="text-4xl sm:text-5xl lg:text-7xl font-medium leading-normal mb-6 lg:mb-12">
       Welcome to my Portfolio
@@ -62,14 +62,16 @@ export default function Home() {
 </Link>
   </div>
 
-  <div className="flex-1 flex justify-center items-center m-4 lg:m-12">
+  <div className="myImageContainer flex-1 flex justify-center items-center m-4 lg:m-12">
+  
     <Image
-      className=" myImage"
+      className="myImage -mb-12"
       src={myImage}
       width={650}
       height={550}
       alt="picture of a web developer"
     />
+
   </div>
   
 </section>
