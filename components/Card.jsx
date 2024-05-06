@@ -206,7 +206,7 @@ export default function Card() {
             </div>
             <p className="mb-2 text-gray-700 text-base mb-2">
               A simple to do list with functions such as edit, delete and mark complete.
-               After completing the task you can click on "complete" and see what was already done.
+              Clear and simple design using CSS. 
 
               <span className="font-semibold text-black underline underline-offset-2">
                 {" "}

@@ -6,9 +6,9 @@ import { FaRegAddressCard } from "react-icons/fa";
 import { CiInstagram } from "react-icons/ci";
 import { LiaGithubSquare } from "react-icons/lia";
 import { CiLinkedin } from "react-icons/ci";
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Navbar from '@/components/Navbar';
-
+import Image from 'next/image';
 export default function Contact() {
  
 
@@ -44,11 +44,11 @@ export default function Contact() {
 
   return (
     <div>
-        <div className=''>
+        <div >
           <Navbar/>
         <div className="container">
       <span className="big-circle"></span>
-      <img src="img/shape.png" class="square" alt="" />
+      <Image src="img/shape.png" class="square" alt="a round shape" />
       <div className="form">
         <div className="contact-info">
           <h3 className="title">Let us get in touch</h3>
@@ -94,7 +94,7 @@ export default function Contact() {
           <span className="circle one"></span>
           <span className="circle two"></span>
 
-          <form action="mailto:mkaminska93@gmail.com?subject=Portfolio Monika Genedl" method="POST" enctype="text/plain"  autocomplete="off">
+          <form action="mailto:mkaminska93@gmail.com?subject=Portfolio Monika Genedl" method="POST" encType="text/plain"  autoComplete="off">
             <h3 className="title">Contact me!</h3>
             <div className="input-container">
               <input type="text" name="name" className="input" />
