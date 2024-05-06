@@ -5,6 +5,7 @@ import HackerNews from "../images/Hacker-New Imitation.png";
 import SimonSays from "../images/Simon-Says.png";
 import MiniGame from "../images/mini-game.png";
 import MockPetAdoption from "../images/adoption.png";
+import ToDoList from "../images/ToDoList.png";
 
 export default function Card() {
   return (
@@ -168,7 +169,7 @@ export default function Card() {
               Simon Says -repeat after me!
             </div>
             <p className="mb-2 text-gray-700 text-base mb-2">
-              There is no better to understand DOM, JavaScript and how to
+              There is no better way to understand DOM, JavaScript and how to
               utilize classes than to practice it by making small games! Its
               about learning and enjoying what you do!
               <span className="font-semibold text-black underline underline-offset-2">
@@ -179,6 +180,42 @@ export default function Card() {
             </p>
             <a
               href="https://simon-says-two.vercel.app/"
+              target="_blank"
+              className="hero-bg text-black rounded group py-2 px-4  my-4 font-semibold hover:bg-black hover:text-orange-100"
+            >
+              EXPLORE
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="bg-gray-100 rounded my-8 mx-8 flex flex-col justify-between shadow-2xl transition-all duration-700 hover:scale-110">
+        <h1 className="text-center mx-2 text-3xl flex justify-center my-4 underline underline-offset-2 font-semibold">
+          Simple To-Do-List
+        </h1>
+        <div className="max-w-sm rounded overflow-hidden shadow-lg mx-8 my-8 ">
+          <Image
+            className="rounded-xl object-cover "
+            width={450}
+            height={350}
+            src={ToDoList}
+            alt="Avatar"
+          />
+          <div class="px-6 py-4">
+            <div className="font-bold text-xl mb-4">
+              Create Task - complete them!
+            </div>
+            <p className="mb-2 text-gray-700 text-base mb-2">
+              A simple to do list with functions such as edit, delete and mark complete.
+               After completing the task you can click on "complete" and see what was already done.
+
+              <span className="font-semibold text-black underline underline-offset-2">
+                {" "}
+                Tools:{" "}
+              </span>
+              HTML, CSS, JavaScript, React, GitHub , Vercel
+            </p>
+            <a
+              href="https://to-do-list-xi-puce.vercel.app/"
               target="_blank"
               className="hero-bg text-black rounded group py-2 px-4  my-4 font-semibold hover:bg-black hover:text-orange-100"
             >
